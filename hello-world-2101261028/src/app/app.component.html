@@ -1,0 +1,45 @@
+<section class="wrapper">
+  <h1>{{ name }}</h1>
+  <ul>
+    <li (click)="toggleItem(0)" class="details">
+      <h3>
+        {{ items[0].title }}
+      </h3>
+      <p *ngIf="items[0].visible">
+        {{ items[0].content }}
+      </p>
+    </li>
+    <li (click)="toggleItem(1)" class="details">
+      <h3>
+        {{ items[1].title }}
+      </h3>
+      <p *ngIf="items[1].visible">
+        {{ items[1].content }}
+      </p>
+    </li>
+    <li (click)="toggleItem(2)" class="details">
+      <h3>
+        {{ items[2].title }}
+      </h3>
+      <a href="{{ items[2].link }}" *ngIf="items[2].visible" target="_blank">
+        {{ items[2].content }}
+      </a>
+    </li>
+    <li (click)="toggleItem(3)" class="details">
+      <h3>
+        {{ items[3].title }}
+      </h3>
+      <p *ngIf="items[3].visible">
+        {{ items[3].content }}
+      </p>
+    </li>
+    <li (click)="toggleItem(4)" class="details">
+      <h3>
+        {{ items[4].title }}
+      </h3>
+      <p *ngIf="items[4].visible">
+        {{ items[4].content }}
+      </p>
+    </li>
+  </ul>
+</section>
